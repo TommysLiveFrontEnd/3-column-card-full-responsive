@@ -1,0 +1,32 @@
+// Subject to change
+// Mixen MediaQ Min - Max
+
+$breakpoints-up: (
+	'mobile': '575em',
+	'tablet': 'rem-calc(768)',
+	'laptop': 'rem-calc(1024)',
+	'desktop': 'rem-calc(1366)',
+	'desktop-xl': 'rem-calc(1920)',
+);
+
+$breakpoints-down: (
+	'max-width': 'rem-calc(1480)',
+);
+
+//gutter
+$gutter: rem-calc(15);
+
+
+// Desktop - MediaQ
+@mixin breakpoint($size) {
+	@media (min-width: map-get($breakpoints-up, $size)) {
+		@content;
+	}
+}
+
+// Moblie - Tablet MediaQ
+@mixin breakpoint-down($size) {
+	@media (max-width: map-get($breakpoints-down, $size)) {
+		@content;
+	}
+}

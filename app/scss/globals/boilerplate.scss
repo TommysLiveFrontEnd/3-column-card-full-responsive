@@ -1,0 +1,71 @@
+// Add this section of code to all addition component scss pages 
+@use '../util/' as *;
+
+
+// Basic Page Layout styles 
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: rem(16);
+    background: var(--vrylightgray);
+    font-family: var(--font1);
+  }
+
+  
+
+  // Script for Accessibility 
+  .visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  @mixin a-styles {
+    color: var(--offsetblue);
+    font-weight: 300;
+    font-size: rem(18);
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--transparentwht);
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid var(--vrylightgray);
+    }
+  }
+
+
+  @mixin btn-styles {
+    background-color: var(--vrylightgray);
+    border: 2px solid var(--vrylightgray);
+    font-family: var(--font1);
+    font-size: rem(16);
+    padding: rem(12) rem(29);
+    border-radius: rem(30);
+
+    &:hover {
+      background-color: transparent;
+      color: var(--transparentwht);
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }

@@ -1,0 +1,49 @@
+@use '../util/' as *;
+@use '../globals/' as *;
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: rem(80) 0;
+}
+
+
+// Phone to Small Tablet Responsive 
+@media screen and (max-width: 750px) {
+    .cards {
+        width: 100%;
+        height: auto;
+        max-width: rem(450);
+        padding-left: rem(25);
+        padding-right: rem(25);
+    }
+}
+
+// Laptop to Large 1880 Screen Responsive
+@media screen and (min-width: 1024px) {
+    .container {
+        height: 100vh;
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c1 {
+        max-height: rem(462);
+        max-width: rem(310);
+    }
+
+    .c2 {
+        max-height: rem(462);
+        max-width: rem(310);
+    }
+
+    .c3 {
+        max-height: rem(462);
+        max-width: rem(310);
+    }
+
+}
+    

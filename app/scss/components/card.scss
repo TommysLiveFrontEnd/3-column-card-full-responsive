@@ -1,0 +1,83 @@
+// Add this section of code to all addition component scss pages 
+@use '../util/' as *;
+@use '../globals/' as *;
+
+.c1 {
+    color: var(--vrylightgray);
+    background-color: var(--brightorange);
+    padding: rem(50);
+    border-radius: 10px;
+    &__icon {
+        padding-bottom: rem(30);
+    }
+
+    &__title {
+        font-family: var(--font2);
+        text-transform: uppercase;
+        padding-bottom: rem(25);
+    }
+
+    &__about {
+        color: var(--transparentwht);
+        padding-bottom: rem(20);
+    }
+
+    &__btn {
+        color: var(--brightorange);
+        @include btn-styles();
+    }
+}
+
+.c2 {
+    color: var(--vrylightgray);
+    background-color: var(--darkcyan);
+    padding: rem(50);
+    border-radius: 10px;
+    &__icon {
+        padding-bottom: rem(30);
+    }
+
+    &__title {
+        font-family: var(--font2);
+        text-transform: uppercase;
+        padding-bottom: rem(25);
+    }
+
+    &__about {
+        color: var(--transparentwht);
+        padding-bottom: rem(20);
+    }
+
+    &__btn {
+        color: var(--darkcyan);
+        @include btn-styles();
+    }
+}
+
+.c3 {
+    color: var(--vrylightgray);
+    background-color: var(--vrydarkcyan);
+    padding: rem(50);
+    border-radius: 10px;
+    &__icon {
+        padding-bottom: rem(30);
+    }
+
+    &__title {
+        font-family: var(--font2);
+        text-transform: uppercase;
+        padding-bottom: rem(25);
+    }
+
+    &__about {
+        color: var(--transparentwht);
+        padding-bottom: rem(10);
+    }
+
+    &__btn {
+        color: var(--vrydarkcyan);
+        @include btn-styles();
+    }
+}
+
+
